@@ -2,7 +2,39 @@
     background-color: #2E6171;
 }
 
-.navbar-item {
+.navbar-brand {
     color: white !important;
+    margin: none;
+    font-size: x-large !important;
+}
+
+.navbar-item {
+    color: #d9eaff !important;
+    align-self: center;
+    text-decoration: none;
+    padding-right: 1em;
+
+}
+
+.navbar-item:hover {
+    color: white !important;
+}
+
+
+.navbar-form {
+    display: flex;
+    flex-grow: 1;
+    justify-content: center !important;
+    align-items: center;   
+    margin-right: 150px;
+}
+
+
+.navbar-formcontrol {
     
+}
+
+
+.navbar-collapse {
+
 }
