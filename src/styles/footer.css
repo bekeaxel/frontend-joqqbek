@@ -1,11 +1,10 @@
 /* styles/footer.css */
 .footer-props {
-    background-color: #2E6171;
+    background-color: #292e33;;
     padding: 20px;
     text-align: center;
     font-size: 15px;
     color: white;
-    position: fixed;
     bottom: 0;
     width: 100%;
   }

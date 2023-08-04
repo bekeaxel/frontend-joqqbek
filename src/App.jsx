@@ -4,8 +4,8 @@ import './styles/App.css';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import Home from './routes/Home';
-import Courses from './routes/Courses';
-import Contact from './routes/Contact';
+import Search from './routes/Search';
+import Submit from './routes/Submit';
 
 const App = () => {
   return (
@@ -14,13 +14,12 @@ const App = () => {
         <Navbar />
         <Routes> 
           <Route path="/" element={<Home />} />
-          <Route path="/contact" element={<Contact />}/>
-          <Route path="/courses" element={<Courses />}/>
+          <Route path="/submit" element={<Submit />} /> 
+          <Route path="/search" element={<Search />} />
         </Routes>
-      </BrowserRouter>
       <Footer />
-      {/* all routing visa olika sidor beroende på vart man är */}
-      {/* footer */}
+      </BrowserRouter>
+
     </div>
   );
 }
