@@ -1,31 +1,28 @@
 import {useState } from 'react';
-import { useNavigate } from 'react-router-dom';
 import '../styles/searchbar.css';
+import { useNavigate } from 'react-router-dom';
 
 const SearchBar = () => {
     const [inputValue, setInputValue] = useState("");
     const navigate = useNavigate();
 
-    const handleKeyDown = (event) => {
-        if (event.key === 'Enter') {
-            const enteredValue = inputValue;
-            navigate(enteredValue);
-            setInputValue('');
-        }
-    }
-
     const handleInputChange = (event) => {
         setInputValue(event.target.value)
     }
 
+    const handleFormSubmit = (event) => {
+        event.preventDefault();
+        sessionStorage.setItem('inputValue', inputValue);
+        navigate('/search/' + inputValue.toString());
+    }
+
     return (
-        <form> 
+        <form onSubmit={handleFormSubmit}> 
             <input
                 className="search-bar"
                 type="text"
                 placeholder="Search for stuff"
-                onChange = {handleInputChange}
-                onKeyDown={handleKeyDown} />
+                onChange = {handleInputChange}/>
             <button className="search-bar-button">
                 <i className="fa-solid fa-magnifying-glass" style={{color: "#f7faff"}}></i>
             </button>  

@@ -1,4 +1,5 @@
 import {Tabs} from 'antd';
+
 import DataList from '../components/DataList';
 import SearchBar from '../components/SearchBar';
 import '../styles/search.css';

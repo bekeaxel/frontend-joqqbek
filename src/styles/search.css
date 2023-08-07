@@ -1,8 +1,11 @@
-.tabs {
-    color: white;
+.ant-tabs-tab-btn {
+    color: white !important;
 } 
 
-.tabs:hover {
-    color: red;
+.ant-tabs-tab-btn:hover {
+    color: red !important;
 }
 
+.ant-tabs-tab-btn:active {
+    color: green !important;
+}
