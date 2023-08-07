@@ -1,4 +1,5 @@
 import '../styles/home.css';
+import SearchBar from '../components/SearchBar'
 
 const Home = () => {
     return(
@@ -6,12 +7,7 @@ const Home = () => {
             <div className="container-h">
                 <div className="search-container">
                     {/* put action on form */}
-                    <form  > 
-                        <input className="search-bar" type="text" placeholder="Search for stuff" />
-                        <button>
-                            <i className="fa-solid fa-magnifying-glass" style={{color: "#f7faff"}}></i>
-                        </button>
-                    </form>
+                    <SearchBar />
                 </div>
             </div>
         </>

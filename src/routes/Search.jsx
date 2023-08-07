@@ -1,4 +1,7 @@
-import {Tabs} from 'antd'
+import {Tabs} from 'antd';
+import DataList from '../components/DataList';
+import SearchBar from '../components/SearchBar';
+import '../styles/search.css';
 
 
 const Search = () => {
@@ -6,11 +9,11 @@ const Search = () => {
         console.log(key);
     };
     
-    const items = [
+    const items = [ 
         {
           key: '1',
           label: `Notes`,
-          children: `Content of Tab Pane 1`,
+          children: <DataList />,
         },
         {
           key: '2',
@@ -29,14 +32,7 @@ const Search = () => {
             <div className="container">
                 <div className="search-container">
                     {/* put action on form */}
-                    <form >
-
-                        <input className="search-bar" type="text" placeholder="Search for stuff" />
-                        <button>
-                            <i className="fa-solid fa-magnifying-glass" style={{color: "#f7faff"}}></i>
-                        </button>
-
-                    </form>
+                    <SearchBar></SearchBar>
                 </div>
                 <div >
                     <Tabs defaultActiveKey="1" items={items} onChange={onChange} >

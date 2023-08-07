@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
+import './styles/custom-variables.css';
 import 'bootstrap/dist/css/bootstrap.css'
 
 

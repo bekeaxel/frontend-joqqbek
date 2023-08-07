@@ -1,4 +1,4 @@
-import {Navbar, Container, Nav, Form, Button, FormControl, NavItem} from 'react-bootstrap';
+import {Navbar, Container, Nav} from 'react-bootstrap';
 import { NavLink } from 'react-router-dom';
 import React from 'react';
 import '../styles/navbar.css'
@@ -10,7 +10,9 @@ const navbar = () => {
         <Container className="fluid">
         {/* <i class="fa-solid fa-bars"></i> */}
             <NavLink className="navbar-brand" to="/">
-                study thing
+                <div>
+                    <img src='../../public/images/logo.png' alt=''/>
+                </div>
             </NavLink>
             <Navbar.Toggle type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="true" aria-label="Toggle Navigation">
                 <span className="fa-solid fa-bars"></span>
