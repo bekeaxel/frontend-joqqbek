@@ -1,6 +1,6 @@
 .navbar {
-    background-color: #526bb6fa;
-    box-shadow: 2px 1px 5px rgb(0, 0, 0);
+    background-color: #8d55dc;
+    box-shadow: 2px 1px 5px rgb(19, 19, 19);
 }
 
 .navbar-brand {
@@ -20,13 +20,32 @@
     color: white !important;
 }
 
-
 .navbar-form {
     display: flex;
     flex-grow: 1;
     justify-content: center !important;
     align-items: center;   
     margin-right: 150px;
+}
+
+.submit-button {
+    margin-right: 1px;
+    color: white;
+    text-decoration: none;
+    font-size: 130%;
+    transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    border-radius: 10% /20%; /* Apply border-radius in the normal state */
+}
+
+.submit-button:hover {
+    background-color: #573180e1;
+    box-shadow: 1px 1px 1px  #4a2c74;
+    
+    /* border-radius: 10% / 25%; Remove border-radius from here */
 }
 
 

@@ -33,7 +33,8 @@ const Search = () => {
             <div className="container">
                 <div className="search-container">
                     {/* put action on form */}
-                    <SearchBar></SearchBar>
+                    
+                    <SearchBar ></SearchBar>
                 </div>
                 <div >
                     <Tabs defaultActiveKey="1" items={items} onChange={onChange} >

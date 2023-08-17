@@ -18,8 +18,8 @@ const navbar = () => {
                 <span className="fa-solid fa-bars"></span>
             </Navbar.Toggle>
             <Navbar.Collapse id="navbarContent" className="navbar-collapse">
-                <Nav className="me-auto" >
-                    <NavLink className="navbar-item" to={"/submit"}>Submit</NavLink>
+                <Nav className="ms-auto" >
+                    <NavLink className="submit-button" to={"/submit"}>Submit</NavLink>
                 </Nav>
             </Navbar.Collapse>
         </Container>

@@ -22,6 +22,7 @@ const SearchBar = () => {
                 className="search-bar"
                 type="text"
                 placeholder="Search for stuff"
+                defaultValue={sessionStorage.getItem('inputValue')}
                 onChange = {handleInputChange}/>
             <button className="search-bar-button">
                 <i className="fa-solid fa-magnifying-glass" style={{color: "#f7faff"}}></i>

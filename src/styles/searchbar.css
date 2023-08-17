@@ -12,13 +12,17 @@
     border-radius: 50px;
     width: 5%;
     height: 50px;
-    background-color: #526bb6fa;
+    background-color: #8d55dc;
     color: white;
     font-weight: bold;
     font-size: large;
     border: none;
     box-shadow: 2px 1px 5px rgb(0, 0, 0);
     margin-left: 0.75em;
+}
+
+.search-bar-button:active {
+
 }
 
 .search-bar::placeholder {

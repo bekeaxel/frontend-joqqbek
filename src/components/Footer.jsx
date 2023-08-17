@@ -13,10 +13,10 @@ const Footer = () => {
                
             </div>
             <div className="col-2">
-                asdf
+                
             </div>
             <div className="col-3"
-            >sds</div>
+            ></div>
         </div> 
     )
 }
